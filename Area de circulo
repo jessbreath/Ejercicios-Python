@@ -1,0 +1,18 @@
+
+print("Ingresa el radio de un circulo para hallar area y longitud")
+radio=input()
+radio=int(radio)
+
+
+
+import math
+pi=math.pi
+area= pi*radio**2
+longitud=2*pi*radio
+
+print("Los resultados son:")
+print("Area: ", area)
+print("Longitus:", longitud)
+
+
+input('Press ENTER to exit')
