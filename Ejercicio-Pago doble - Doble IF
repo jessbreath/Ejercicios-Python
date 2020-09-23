@@ -1,0 +1,25 @@
+nombre = str(input("Tu nombre, por favor: "))
+
+print("************************************************")
+print(f"Completa la informacion solicitada {nombre}")
+
+pagoHora = float(input("Cuanto te pagan por hora? "))
+
+horastrabajadas = int(input("Cuantas horas has trabajado? "))
+
+horaExtra = 0
+
+if (horastrabajadas <= 40 and horastrabajadas > 0):
+
+        salario = pagoHora*horastrabajadas
+        print("Tu salario es ",salario, ". Has trabajado: ",horastrabajadas)
+else:
+        if (horastrabajadas > 40):
+            horaExtra = horastrabajadas - 40
+            horaExtrapago = 2 * pagoHora   
+            #Corregir esta parte para que las horas salgan bien
+            salario =  pagoHora*40 + (pagoHora*horaExtra*2)
+            print(f"Tu salario es {salario} . Has trabajado: {horastrabajadas} horas")
+            print(f"Pago por horas extras  {horaExtrapago}. Horas extras: {horaExtra}")
+        else:
+            print("ERROR ERROR PI PI PI")
