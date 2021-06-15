@@ -1,0 +1,29 @@
+Algoritmo sin_titulo
+	Definir genero,varon,mujer,edad Como Real;
+	Escribir "Si es hombre(1) o mujer(2)";
+	Leer genero;
+	Segun genero Hacer
+		1:
+			Escribir "Que edad tiene?";
+			Leer edad;
+			si edad <= 0 Entonces
+				Escribir "Error";
+			SiNo
+				si edad < 25 Entonces
+					Escribir "Pagaran: 1000 soles";
+				SiNo
+					Escribir "Pagaran: 700 soles";
+				FinSi
+			FinSi
+		2:
+			Escribir "Que edad tiene?";
+			Leer edad;
+			si edad <= 0 Entonces
+				Escribir "Error";
+			SiNo
+				Escribir "Pagas: 500 solos";
+			FinSi	
+		De Otro Modo:
+			Escribir"Error";
+	Fin Segun
+FinAlgoritmo
